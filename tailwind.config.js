@@ -33,6 +33,22 @@ export default {
         "5xl": "48.8px",
         "6xl": "61px",
       },
+      animation: {
+        shimmer: "shimmer 8s infinite",
+      },
+      keyframes: {
+        shimmer: {
+          "100%": {
+            transform: "translateX(0%)",
+          },
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shimmer-width)) 0",
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shimmer-width)) 0",
+          },
+        },
+      },
     },
   },
   darkMode: "class",
