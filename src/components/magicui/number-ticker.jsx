@@ -7,15 +7,16 @@ import { cn } from "@/lib/utils";
 
 export default function NumberTicker({
   value,
+  stiffVal = 100,
   direction = "up",
   delay = 0,
-  className
+  className,
 }) {
   const ref = useRef(null);
   const motionValue = useMotionValue(direction === "down" ? value : 0);
   const springValue = useSpring(motionValue, {
-    damping: 60,
-    stiffness: 100,
+    damping: 100,
+    stiffness: stiffVal,
   });
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
@@ -24,21 +25,24 @@ export default function NumberTicker({
       setTimeout(() => {
         motionValue.set(direction === "down" ? 0 : value);
       }, delay * 1000);
-  }, [motionValue, isInView, delay, value, direction]);
+  }, [motionValue, isInView, delay, value, direction, stiffVal]);
 
-  useEffect(() =>
-    springValue.on("change", (latest) => {
-      if (ref.current) {
-        ref.current.textContent = Intl.NumberFormat("en-US").format(latest.toFixed(0));
-      }
-    }), [springValue]);
+  useEffect(
+    () =>
+      springValue.on("change", (latest) => {
+        if (ref.current) {
+          ref.current.textContent = Intl.NumberFormat("en-US").format(
+            latest.toFixed(0)
+          );
+        }
+      }),
+    [springValue]
+  );
 
   return (
-    (<span
-      className={cn(
-        "inline-block tabular-nums text-black dark:text-white tracking-wider",
-        className
-      )}
-      ref={ref} />)
+    <span
+      className={cn("inline-block tabular-nums text-current", className)}
+      ref={ref}
+    />
   );
 }
