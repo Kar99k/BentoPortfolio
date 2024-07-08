@@ -6,15 +6,19 @@ import InfoGraphics from "./components/Molecules/InfoGraphics";
 import ProPic from "./components/Atoms/ProPic";
 import NameTag from "./components/Atoms/NameTag";
 import Tags from "./components/Molecules/Tags";
+import CTA from "./components/Molecules/CTA";
+import NameCard from "./components/Organisms/NameCard";
 
 function App() {
   return (
-    <div className="container mx-auto flex flex-col gap-4 justify-center items-center">
+    <div className="container mx-auto ">
       {/* <NavBar/>
       <InfoGraphics/> */}
       {/* <ProPic /> */}
       {/* <NameTag/> */}
       {/* <Tags /> */}
+      {/* <CTA /> */}
+      {/* <NameCard /> */}
     </div>
   );
 }

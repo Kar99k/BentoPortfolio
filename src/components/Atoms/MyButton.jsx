@@ -12,6 +12,8 @@ export const MyButton = extendVariants(Button, {
 
     size: {
       sm: "px-3 w-[87px] h-[40px] text-sm gap-4 rounded-[10px]",
+      monosm:
+        "px-1 size-[10.6rem] text-[14px] rounded-[8px] font-bold flex justify-center items-center gap-1",
     },
 
     variant: {

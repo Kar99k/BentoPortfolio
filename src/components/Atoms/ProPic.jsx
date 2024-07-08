@@ -4,7 +4,7 @@ import MyChip from "./MyChip";
 
 const ProPic = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col items-center">
       <Card className="w-[84px] h-[84px]" radius="md">
         <Image
           isBlurred
@@ -15,7 +15,7 @@ const ProPic = () => {
         />
       </Card>
 
-      <MyChip text="Open to Work"></MyChip>
+      <MyChip text="Open to Work" ></MyChip>
     </div>
   );
 };
