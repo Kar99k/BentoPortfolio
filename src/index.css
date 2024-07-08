@@ -6,4 +6,5 @@ body {
   height: 100vh;
   @apply bg-black;
   @apply font-maison;
+  overflow: hidden;
 }

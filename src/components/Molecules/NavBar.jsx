@@ -1,14 +1,15 @@
-import { Card } from "@nextui-org/react";
 import { MyButton } from "../Atoms/MyButton";
 import { useState } from "react";
+import { MyCard } from "../Atoms/MyCard";
 
 const NavBar = () => {
   const [clicked, setClicked] = useState("Home");
 
   return (
-    <Card className="px-3 py-3 w-[312px] h-[64px] flex-row gap-3 justify-center items-center">
+    <MyCard color="zinc" className="px-3 py-3 w-[90%] h-[64px] flex-row gap-3 justify-center items-center">
       <MyButton
         color="navButton"
+        size="base"
         variant={clicked === "Home" ? "" : "ghost"}
         onClick={(e) => {
           setClicked(e.currentTarget.textContent);
@@ -18,6 +19,7 @@ const NavBar = () => {
       </MyButton>
       <MyButton
         color="navButton"
+        size="base"
         variant={clicked === "Works" ? "" : "ghost"}
         onClick={(e) => {
           setClicked(e.currentTarget.textContent);
@@ -27,6 +29,7 @@ const NavBar = () => {
       </MyButton>
       <MyButton
         color="navButton"
+        size="base"
         variant={clicked === "Services" ? "" : "ghost"}
         onClick={(e) => {
           setClicked(e.currentTarget.textContent);
@@ -34,7 +37,7 @@ const NavBar = () => {
       >
         Services
       </MyButton>
-    </Card>
+    </MyCard>
   );
 };
 

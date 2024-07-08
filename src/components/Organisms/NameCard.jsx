@@ -2,13 +2,13 @@ import { Card } from "@nextui-org/react";
 import NameTag from "../Atoms/NameTag";
 import ProPic from "../Atoms/ProPic";
 import CTA from "../Molecules/CTA";
-import Tags from "../Molecules/Tags";
 import MyChip from "../Atoms/MyChip";
 import Marquee from "../magicui/marquee";
+import { MyCard } from "../Atoms/MyCard";
 
 const NameCard = () => {
   return (
-    <Card className="px-5 py-5 bg-zinc-950 ">
+    <MyCard color="zinc" className="px-5 py-5 w-[90%]">
       <div className="flex flex-col gap-2">
         <div className="flex justify-start gap-3">
           <ProPic />
@@ -19,7 +19,7 @@ const NameCard = () => {
               <MyChip variant="secondary" text="B.Tech,NIT Trichy" emoji="🎓" />
             </div>
 
-            <div className="ml-1 w-1/4 flex items-center justify-center rounded-lg overflow-hidden shadow-xl -mt-1">
+            <div className="ml-1 w-44 flex items-center justify-center rounded-lg overflow-hidden shadow-xl -mt-1">
               <Marquee pauseOnHover className="[--duration:20s]">
                 <MyChip
                   variant="secondary"
@@ -27,7 +27,11 @@ const NameCard = () => {
                   emoji="🏢"
                 />
                 <MyChip variant="secondary" text="Tamil & English" emoji="🗣️" />
-                <MyChip variant="secondary" text="Basketball" emoji="🏀" />
+                <MyChip
+                  variant="secondary"
+                  text="Loves Basketball"
+                  emoji="🏀"
+                />
               </Marquee>
             </div>
           </div>
@@ -35,7 +39,7 @@ const NameCard = () => {
 
         <CTA />
       </div>
-    </Card>
+    </MyCard>
   );
 };
 

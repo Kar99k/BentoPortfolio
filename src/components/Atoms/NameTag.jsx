@@ -14,7 +14,7 @@ const NameTag = () => {
         />
       </div>
 
-      <div className="-mt-4 flex gap-1 items-center">
+      <div className="-mt-3 flex gap-1 items-center">
         <div className="text-lime9 text-sm font-medium">I&lsquo;m </div>
         <WordRotate
           className="text-sm text-white font-medium w-[160px]"
