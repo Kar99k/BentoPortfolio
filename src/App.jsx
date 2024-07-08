@@ -8,6 +8,9 @@ import NameTag from "./components/Atoms/NameTag";
 import Tags from "./components/Molecules/Tags";
 import CTA from "./components/Molecules/CTA";
 import NameCard from "./components/Organisms/NameCard";
+import TechStack from "./components/Molecules/TechStack";
+import LogoMarquee from "./components/Atoms/LogoMarquee";
+import WorkItem from "./components/Atoms/WorkItem";
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
       {/* <Tags /> */}
       {/* <CTA /> */}
       {/* <NameCard /> */}
+      {/* <TechStack /> */}
+      <WorkItem />
     </div>
   );
 }
