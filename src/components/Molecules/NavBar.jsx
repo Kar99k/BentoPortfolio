@@ -1,12 +1,12 @@
 import { MyButton } from "../Atoms/MyButton";
-import { useState } from "react";
 import { MyCard } from "../Atoms/MyCard";
 
-const NavBar = () => {
-  const [clicked, setClicked] = useState("Home");
-
+const NavBar = ({ clicked, setClicked }) => {
   return (
-    <MyCard color="zinc" className="px-3 py-3 w-[90%] h-[64px] flex-row gap-3 justify-center items-center">
+    <MyCard
+      color="zinc"
+      className="px-3 py-3 w-[90%] h-[64px] flex-row gap-3 justify-center items-center scale-[1.2]"
+    >
       <MyButton
         color="navButton"
         size="base"

@@ -19,7 +19,8 @@ const NameTag = () => {
         <WordRotate
           className="text-sm text-white font-medium w-[160px]"
           words={[
-            "a FrontEnd Engineer",
+            "a Software Engineer",
+            "a FrontEnd Developer",
             "a Video Editor",
             "an UI/UX Designer",
             "a Graphic Designer",

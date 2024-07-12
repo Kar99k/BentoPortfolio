@@ -1,4 +1,3 @@
-import { Card } from "@nextui-org/react";
 import NameTag from "../Atoms/NameTag";
 import ProPic from "../Atoms/ProPic";
 import CTA from "../Molecules/CTA";
@@ -8,7 +7,7 @@ import { MyCard } from "../Atoms/MyCard";
 
 const NameCard = () => {
   return (
-    <MyCard color="zinc" className="px-5 py-5 w-[90%]">
+    <MyCard color="zinc" className="px-5 py-5 w-[90%] scale-[1.2]">
       <div className="flex flex-col gap-2">
         <div className="flex justify-start gap-3">
           <ProPic />
@@ -19,11 +18,11 @@ const NameCard = () => {
               <MyChip variant="secondary" text="B.Tech,NIT Trichy" emoji="🎓" />
             </div>
 
-            <div className="ml-1 w-44 flex items-center justify-center rounded-lg overflow-hidden shadow-xl -mt-1">
-              <Marquee pauseOnHover className="[--duration:20s]">
+            <div className="ml-1 w-44 flex items-center justify-center rounded-lg overflow-hidden shadow-xl -mt-1.5">
+              <Marquee className="[--duration:20s]">
                 <MyChip
                   variant="secondary"
-                  text="Software Engineer"
+                  text="Software Engineer @Boeing India"
                   emoji="🏢"
                 />
                 <MyChip variant="secondary" text="Tamil & English" emoji="🗣️" />
