@@ -1,12 +1,12 @@
 import AnimatedShinyText from "../magicui/animated-shiny-text";
 
 const MyChip = ({ variant = "primary", text, emoji = "💻" }) => {
-  const baseClasses = "rounded-[8px]  text-[8px] ";
+  const baseClasses = "rounded-[8px] text-[8px] ";
   const variantClasses = {
     primary:
-      "border border-white/5 text-white bg-black hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400 z-10 -mt-2",
+      "border border-white/5 text-white bg-black z-10 -mt-2 md:w-[116px] md:h-[28px] md:text-xsm md:text-center",
     secondary:
-      "border border-white/5 text-white bg-text-zinc-950 hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400 w-fit",
+      "border border-white/5 text-white bg-text-zinc-950 w-fit md:h-[28px] md:text-sm md:text-center md:rounded-[12px]",
   };
 
   return (

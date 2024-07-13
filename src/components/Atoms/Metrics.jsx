@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Card, CardFooter, CardHeader } from "@nextui-org/react";
+import { CardFooter, CardHeader } from "@nextui-org/react";
 import NumberTicker from "../magicui/number-ticker";
 import { MyCard } from "./MyCard";
 
@@ -7,14 +7,14 @@ const Metrics = (props) => {
   return (
     <MyCard
       color="zinc"
-      className="w-full h-[88px] p-2 flex flex-col justify-between items-center"
+      className="p-1 w-full h-[88px] flex flex-col items-center md:h-full"
     >
-      <CardHeader className="mt-2 h-1/2 text-4xl font-bold text-lime9 text-center justify-center tracking-tighter">
+      <div className="text-4xl font-bold text-lime9 text-center tracking-tighter md:text-6xl">
         <NumberTicker value={props.header} stiffVal={100} />
-      </CardHeader>
-      <CardFooter className="text-white text-sm font-medium text-center justify-center leading-none mb-2">
+      </div>
+      <div className="-mt-2 text-white text-sm font-medium text-center leading-none md:text-xl md:-mt-4">
         {props.footer}
-      </CardFooter>
+      </div>
     </MyCard>
   );
 };

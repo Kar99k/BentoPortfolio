@@ -5,7 +5,7 @@ const NavBar = ({ clicked, setClicked }) => {
   return (
     <MyCard
       color="zinc"
-      className="px-3 py-3 w-[90%] h-[64px] flex-row gap-3 justify-center items-center scale-[1.2]"
+      className="px-3 py-3 w-[90%] h-[64px] flex-row gap-3 justify-center items-center scale-[1.2] md:hidden"
     >
       <MyButton
         color="navButton"
