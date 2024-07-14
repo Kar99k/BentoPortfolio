@@ -50,7 +50,10 @@ const SparklesText = ({
 
   return (
     <div
-      className={cn("text-xl font-bold flex justify-center", className)}
+      className={cn(
+        "text-xl font-bold flex justify-center md:text-2xl",
+        className
+      )}
       {...props}
       style={{
         "--sparkles-first-color": `${colors.first}`,

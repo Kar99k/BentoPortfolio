@@ -17,10 +17,10 @@ import jQuery from "@/assets/logos/jQuery.svg";
 import Flutter from "@/assets/logos/Flutter.svg";
 import Graphql from "@/assets/logos/Graphql.svg";
 
-const LogoMarquee = () => {
+const LogoMarqueeFull = () => {
   return (
-    <div className="  h-44 overflow-hidden">
-      <div className="w-28 h-48 bg-custom-gradient absolute z-20 -mt-1"></div>
+    <div className="  h-48 overflow-hidden md:-mt-2">
+      <div className="w-28 h-[196px] bg-custom-gradient absolute z-20 "></div>
 
       <div className="flex gap-1">
         <Marquee vertical="true" className="[--duration:15s]">
@@ -43,6 +43,9 @@ const LogoMarquee = () => {
           <Image isBlurred width={32} src={jQuery} />
           <Image isBlurred width={24} className="ml-1" src={Flutter} />
           <Image isBlurred width={32} src={Graphql} />
+        </Marquee>
+
+        <Marquee vertical="true" className="[--duration:10s] [--gap:0.8em]">
           <Image isBlurred width={32} src={Ae} />
           <Image isBlurred width={32} src={Ps} />
           <Image isBlurred width={32} src={Pr} />
@@ -59,4 +62,4 @@ const LogoMarquee = () => {
   );
 };
 
-export default LogoMarquee;
+export default LogoMarqueeFull;

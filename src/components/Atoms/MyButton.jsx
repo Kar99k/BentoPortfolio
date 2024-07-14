@@ -16,7 +16,7 @@ export const MyButton = extendVariants(Button, {
       monosm:
         "px-1 size-[10.6rem] text-[12px] rounded-[8px] font-bold flex justify-center items-center gap-1 md:text-xl md:w-full md:h-[56px] md:rounded-[16px]",
       base: "px-3 py-2 w-[87px] h-[40px] text-sm gap-4 rounded-[10px] font-bold justify-center items-center gap-1 inline-flex",
-      service: "p-1 w-[106px] h-7 text-sm font-bold rounded-lg",
+      service: "p-1 w-[164px] h-10 text-base font-bold rounded-xl",
     },
 
     variant: {

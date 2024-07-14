@@ -16,9 +16,9 @@ export default {
       },
       backgroundImage: (theme) => ({
         "custom-gradient":
-          "linear-gradient(180deg, rgba(9,9,0,1) 0%, rgba(9,9,0,0) 6%, rgba(9,9,0,0) 50%, rgba(9,9,0,0) 90%, rgba(9,9,0,1) 100%)",
+          "linear-gradient(180deg, rgba(9,9,0,1) 0%, rgba(9,9,0,0) 10%, rgba(9,9,0,0) 50%, rgba(9,9,0,0) 90%, rgba(9,9,0,1) 100%)",
         "horizontal-vignette":
-          "linear-gradient(90deg, rgba(9,9,0,1) 0%, rgba(9,9,0,0) 6%, rgba(9,9,0,0) 50%, rgba(9,9,0,0) 90%, rgba(9,9,0,1) 100%)",
+          "linear-gradient(90deg, rgba(9,9,0,1) 0%, rgba(9,9,0,1) 6%, rgba(9,9,0,0) 50%, rgba(9,9,0,0) 90%, rgba(9,9,0,1) 100%)",
       }),
       fontFamily: {
         maison: ["Maison Neue Extended", "sans-serif"],
