@@ -19,7 +19,7 @@ import Graphql from "@/assets/logos/Graphql.svg";
 
 const LogoMarquee = () => {
   return (
-    <div className="  h-44 overflow-hidden">
+    <div className="h-36 overflow-hidden md:hidden">
       <div className="w-28 h-48 bg-custom-gradient absolute z-20 -mt-1"></div>
 
       <div className="flex gap-1">

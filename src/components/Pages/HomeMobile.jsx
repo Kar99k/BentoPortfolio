@@ -55,11 +55,11 @@ const HomeMobile = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <div className="flex flex-col w-[100%] justify-center items-center gap-10">
+    <div className="flex flex-col w-[100%] justify-center items-center gap-10 md:hidden">
       <InfoGraphics />
       <NameCard />
       <Button
-        className="w-[90%] h-16 scale-[1.2] -m-1 bg-zinc-950 text-xl font-bold"
+        className="w-[90%] h-16 scale-[1.2] bg-zinc-950 text-xl font-bold"
         variant="flat"
         onPress={onOpen}
       >
@@ -77,7 +77,7 @@ const HomeMobile = () => {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1 text-2xl text-center">
-                🏢 Experience
+                Experience
               </ModalHeader>
 
               <Divider />
@@ -128,24 +128,28 @@ const HomeMobile = () => {
           )}
         </ModalContent>
       </Modal>
-      <div className="grid grid-cols-8 grid-rows-2 gap-2 mt-4 w-[90%] scale-[1.2]">
-        <div className="row-span-2">
+
+      <div className="flex flex-row gap-4 scale-[1.15] mt-2">
+        <div className="flex flex-col gap-4">
           <Button
-            className="w-[172px] h-[72px] text-xl bg-zinc-950 font-bold"
+            className="w-[172px] h-[80px] text-xl bg-zinc-950 font-bold"
             startContent={<img src={Download} width={12} />}
           >
             Resume
           </Button>
-        </div>
-        <div className="row-span-11 col-start-5 ml-4">
-          <TechStack />
-        </div>
-        <div className="row-span-11 row-start-3">
           <WorkCard />
         </div>
-        <div className="row-start-11 row-span-12 col-start-6 -ml-6 mt-2">
+        <div className="flex flex-col gap-4">
+          <TechStack />
           <SocialHandle />
         </div>
+      </div>
+      <div className="flex flex-col justify-center items-center gap-3 mt-1 ">
+        <img
+          src="https://media.giphy.com/media/mXpFZCVJeYTXW/giphy.gif"
+          className="rounded-2xl scale-[1.08]"
+        />
+        <p className="text-xsm font-semibold">Made with 💚 by Karthikeyan</p>
       </div>
     </div>
   );
