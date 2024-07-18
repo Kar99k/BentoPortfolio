@@ -1,5 +1,4 @@
-import { CardBody, CardHeader } from "@nextui-org/react";
-import { MyButton } from "../Atoms/MyButton";
+import { CardHeader } from "@nextui-org/react";
 import { MyCard } from "../Atoms/MyCard";
 
 const Services = () => {

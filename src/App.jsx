@@ -25,7 +25,6 @@ import { Timeline } from "rsuite";
 import TimelineItem from "./components/Molecules/TimelineItem";
 import content from "@/lib/constants";
 import InfoGraphics from "./components/Molecules/InfoGraphics";
-import VideoCall from "@/assets/logos/VideoCall.svg";
 
 function App() {
   const [nav, setNav] = useState("Home");
