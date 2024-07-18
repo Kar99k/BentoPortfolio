@@ -1,4 +1,4 @@
-import { Card, CardBody } from "@nextui-org/react";
+import { CardBody } from "@nextui-org/react";
 import WorkItem from "../Atoms/WorkItem";
 import SparklesText from "../magicui/sparkles-text";
 import Marquee from "../magicui/marquee";
