@@ -3,18 +3,33 @@ import HomeMobile from "./components/Pages/HomeMobile";
 import ServiceMobile from "./components/Pages/ServiceMobile";
 import WorksMobile from "./components/Pages/WorksMobile";
 import NavBar from "./components/Molecules/NavBar";
-import Metrics from "./components/Atoms/Metrics";
 import NameCard from "./components/Organisms/NameCard";
-import { Button } from "@nextui-org/react";
-import VideoCall from "@/assets/logos/VideoCall.svg";
+import {
+  Button,
+  Divider,
+  Image,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  useDisclosure,
+} from "@nextui-org/react";
 import Download from "@/assets/logos/Download.svg";
 import TechStack from "./components/Molecules/TechStack";
 import WorkCard from "./components/Molecules/WorkCard";
 import Services from "./components/Molecules/Services";
 import SocialHandle from "./components/Molecules/SocialHandle";
+import WorkExperience from "./components/Molecules/WorkExperience";
+import { Timeline } from "rsuite";
+import TimelineItem from "./components/Molecules/TimelineItem";
+import content from "@/lib/constants";
+import InfoGraphics from "./components/Molecules/InfoGraphics";
+import VideoCall from "@/assets/logos/VideoCall.svg";
 
 function App() {
   const [nav, setNav] = useState("Home");
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <div>
@@ -27,17 +42,9 @@ function App() {
         </div>
       </div>
 
-      <div className="w-[834px] p-6 flex flex-wrap gap-4 mx-auto max-md:hidden xl:hidden">
+      <div className="w-[834px] p-6 flex flex-wrap gap-4 mx-auto max-md:hidden">
         <div className="flex flex-wrap w-[67%] h-[476px] gap-4 justify-between">
-          <div className="w-[164px] h-[140px] rounded-2xl">
-            <Metrics header={20} footer="Projects" />
-          </div>
-          <div className="w-[164px] h-[140px] rounded-2xl">
-            <Metrics header={4} footer="years Xperience" />
-          </div>
-          <div className="w-[164px] h-[140px] rounded-2xl">
-            <Metrics header={15} footer="Clients" />
-          </div>
+          <InfoGraphics />
           <div className=" w-[526px] h-[256px] rounded-2xl">
             <NameCard />
           </div>
@@ -50,12 +57,69 @@ function App() {
             </Button>
           </div>
           <div className="w-[346px] h-[80px] rounded-2xl">
-            <Button
-              className="w-full h-full text-xl font-bold bg-[#18181B] "
-              startContent={<img src={VideoCall} width={32} />}
+            <WorkExperience onOpen={onOpen} />
+            <Modal
+              backdrop={"blur"}
+              isOpen={isOpen}
+              onOpenChange={onOpenChange}
+              className="w-[360px] bg-zinc-950/90 md:w-[540px]"
+              hideCloseButton
             >
-              Schedule a Call
-            </Button>
+              <ModalContent>
+                {(onClose) => (
+                  <>
+                    <ModalHeader className="flex flex-col gap-1 text-2xl text-center">
+                      Experience
+                    </ModalHeader>
+
+                    <Divider />
+                    <ModalBody className="justify-center p-4">
+                      <Timeline
+                        className="custom-timeline"
+                        isItemActive={(index) => index === 0}
+                      >
+                        <Timeline.Item>
+                          <TimelineItem
+                            timeline={content.timeline[0]}
+                            title={content.title[0]}
+                            company={content.company[0]}
+                            description={content.para.content1}
+                          />
+                        </Timeline.Item>
+
+                        <Timeline.Item>
+                          <TimelineItem
+                            timeline={content.timeline[1]}
+                            title={content.title[1]}
+                            company={content.company[1]}
+                            description={content.para.content2}
+                          />
+                        </Timeline.Item>
+
+                        <Timeline.Item>
+                          <TimelineItem
+                            timeline={content.timeline[2]}
+                            title={content.title[2]}
+                            company={content.company[2]}
+                            description={content.para.content3}
+                          />
+                        </Timeline.Item>
+                      </Timeline>
+                    </ModalBody>
+                    <ModalFooter className="justify-center">
+                      <Button
+                        color="danger"
+                        variant="flat"
+                        onPress={onClose}
+                        className="w-full"
+                      >
+                        Close
+                      </Button>
+                    </ModalFooter>
+                  </>
+                )}
+              </ModalContent>
+            </Modal>
           </div>
         </div>
 
@@ -70,7 +134,15 @@ function App() {
 
         <div className="flex flex-row gap-4 w-[834px]">
           <div className="flex flex-col gap-4 h-[364px]">
-            <div className="bg-zinc-500 w-[264px] h-[60%] rounded-2xl"></div>
+            <div className=" w-[264px] h-[58%] rounded-2xl overflow-hidden">
+              <Image
+                src="https://media.giphy.com/media/mXpFZCVJeYTXW/giphy.gif"
+                className="rounded-2xl scale-[1.5]"
+              />
+              <p className="text-sm font-semibold mt-16 text-center">
+                Made with 💚 by Karthikeyan
+              </p>
+            </div>
             <div className=" w-[264px] h-[25%] rounded-2xl">
               <SocialHandle />
             </div>

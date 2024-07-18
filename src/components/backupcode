@@ -1,0 +1,135 @@
+      {/* xl screen */}
+
+      <div className="w-[1440px] p-6 hidden mx-auto my-4 gap-4 ">
+        <div className="flex flex-row gap-4 w-full">
+          <InfoGraphics />
+          <div className=" w-[100%] h-[140px] rounded-2xl">
+            <WorkExperience onOpen={onOpen} />
+            <Modal
+              backdrop={"blur"}
+              isOpen={isOpen}
+              onOpenChange={onOpenChange}
+              className="w-[360px] bg-zinc-950/90"
+              hideCloseButton
+            >
+              <ModalContent>
+                {(onClose) => (
+                  <>
+                    <ModalHeader className="flex flex-col gap-1 text-2xl text-center">
+                      Experience
+                    </ModalHeader>
+
+                    <Divider />
+                    <ModalBody className="justify-center p-4">
+                      <Timeline
+                        className="custom-timeline"
+                        isItemActive={(index) => index === 0}
+                      >
+                        <Timeline.Item>
+                          <TimelineItem
+                            timeline={content.timeline[0]}
+                            title={content.title[0]}
+                            company={content.company[0]}
+                            description={content.para.content1}
+                          />
+                        </Timeline.Item>
+
+                        <Timeline.Item>
+                          <TimelineItem
+                            timeline={content.timeline[1]}
+                            title={content.title[1]}
+                            company={content.company[1]}
+                            description={content.para.content2}
+                          />
+                        </Timeline.Item>
+
+                        <Timeline.Item>
+                          <TimelineItem
+                            timeline={content.timeline[2]}
+                            title={content.title[2]}
+                            company={content.company[2]}
+                            description={content.para.content3}
+                          />
+                        </Timeline.Item>
+                      </Timeline>
+                    </ModalBody>
+                    <ModalFooter className="justify-center">
+                      <Button
+                        color="danger"
+                        variant="flat"
+                        onPress={onClose}
+                        className="w-full"
+                      >
+                        Close
+                      </Button>
+                    </ModalFooter>
+                  </>
+                )}
+              </ModalContent>
+            </Modal>
+          </div>
+          <div className="bg-zinc-950 rounded-2xl w-[80%]"></div>
+        </div>
+
+        {/* Second Row */}
+        <div className="flex flex-row gap-4 w-full h-[286px]">
+          <div className="flex flex-col gap-4 w-[305px]">
+            <div className="bg-zinc-950 w-[100%] h-[70%] rounded-2xl"></div>
+            <div className="bg-zinc-950 w-[100%] h-[30%] rounded-2xl"></div>
+          </div>
+
+          <div className="w-[586px]">
+            <NameCard />
+          </div>
+          <div className="w-[20%]">
+            <TechStack />
+          </div>
+          <div className="bg-zinc-950 w-[20%] rounded-2xl"></div>
+        </div>
+
+        {/* Third Row */}
+        <div className="flex flex-row gap-4 w-full h-[364px]">
+          <div className=" w-[339px] rounded-2xl">
+            <Services />
+          </div>
+
+          <div className="flex flex-col w-[569px] gap-4">
+            <div className="flex flex-row h-[80px] gap-4">
+              <div className="w-[50%] rounded-2xl">
+                <Button
+                  className="w-full h-full text-xl font-bold bg-[#18181B] "
+                  startContent={<img src={Download} width={12} />}
+                >
+                  Resume
+                </Button>
+              </div>
+              <div className="w-[80%] rounded-2xl">
+                <Button
+                  className="w-full h-full text-xl font-bold bg-[#18181B]"
+                  startContent={<img src={VideoCall} width={32} />}
+                >
+                  Schedule a Call
+                </Button>
+              </div>
+            </div>
+            <div className="w-full h-[264px] rounded-2xl">
+              <Image
+                src="https://media.giphy.com/media/mXpFZCVJeYTXW/giphy.gif"
+                className="rounded-2xl scale-[1]"
+              />
+              <p className="text-sm font-semibold mt-5 text-center">
+                Made with 💚 by Karthikeyan
+              </p>
+            </div>
+          </div>
+
+          <div className="w-[50%] rounded-2xl">
+            <WorkCard />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
