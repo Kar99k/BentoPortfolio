@@ -4,11 +4,16 @@ import "./index.css";
 import "./assets/font/fontStylesheet.css";
 import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <NextUIProvider>
     <NextThemesProvider attribute="class" defaultTheme="dark">
-      <App/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={<App />} />
+        </Routes>
+      </BrowserRouter>
     </NextThemesProvider>
   </NextUIProvider>
 );

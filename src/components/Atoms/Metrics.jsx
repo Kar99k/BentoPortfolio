@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import { CardFooter, CardHeader } from "@nextui-org/react";
 import NumberTicker from "../magicui/number-ticker";
 import { MyCard } from "./MyCard";
 

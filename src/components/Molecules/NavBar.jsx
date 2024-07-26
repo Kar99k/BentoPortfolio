@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { MyButton } from "../Atoms/MyButton";
 import { MyCard } from "../Atoms/MyCard";
 
 const NavBar = ({ clicked, setClicked }) => {
+  const navigate = useNavigate();
+
   return (
     <MyCard
       color="zinc"
@@ -13,6 +16,7 @@ const NavBar = ({ clicked, setClicked }) => {
         variant={clicked === "Home" ? "" : "ghost"}
         onClick={(e) => {
           setClicked(e.currentTarget.textContent);
+          navigate("/");
         }}
       >
         Home
@@ -23,6 +27,7 @@ const NavBar = ({ clicked, setClicked }) => {
         variant={clicked === "Works" ? "" : "ghost"}
         onClick={(e) => {
           setClicked(e.currentTarget.textContent);
+          navigate("/works");
         }}
       >
         Works
@@ -33,6 +38,7 @@ const NavBar = ({ clicked, setClicked }) => {
         variant={clicked === "Services" ? "" : "ghost"}
         onClick={(e) => {
           setClicked(e.currentTarget.textContent);
+          navigate("/services");
         }}
       >
         Services

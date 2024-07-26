@@ -2,6 +2,7 @@ import InfoGraphics from "../Molecules/InfoGraphics";
 import NameCard from "../Organisms/NameCard";
 import {
   Button,
+  Divider,
   Image,
   Modal,
   ModalBody,
@@ -16,7 +17,7 @@ import SocialHandle from "../Molecules/SocialHandle";
 import Download from "@/assets/logos/Download.svg";
 import "rsuite/Timeline/styles/index.css";
 import TimelineItem from "../Molecules/TimelineItem";
-import { Divider, Timeline } from "rsuite";
+import { Timeline } from "rsuite";
 import WorkExperience from "../Molecules/WorkExperience";
 import content from "@/lib/constants";
 
@@ -94,7 +95,7 @@ const HomeMobile = () => {
       <div className="flex flex-row gap-4 scale-[1.15] mt-2">
         <div className="flex flex-col gap-4">
           <Button
-            className="w-[172px] h-[80px] text-xl bg-zinc-950 font-bold"
+            className="w-[172px] h-[80px] text-xl bg-zinc-950 font-semibold"
             startContent={<img src={Download} width={12} />}
           >
             Resume

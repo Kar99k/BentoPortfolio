@@ -6,22 +6,25 @@ import { MyCard } from "../Atoms/MyCard";
 
 const SocialHandle = () => {
   return (
-    <MyCard color="zinc" className="w-36 items-center md:w-full">
-      <CardHeader className="px-0 py-0 mt-3 justify-center text-base font-bold md:text-2xl">
+    <MyCard
+      color="zinc"
+      className="p-2 w-36 h-20 items-center flex flex-col gap-1 md:w-full"
+    >
+      <div className=" justify-center text-base font-semibold md:text-[18px]">
         Follow me on
-      </CardHeader>
-      <CardBody className="py-3 -mt-2 items-center justify-center flex flex-row gap-2 overflow-hidden">
+      </div>
+      <div className="flex flex-row gap-2">
         <Image
           isBlurred
           radius="sm"
-          width={32}
+          width={28}
           src={Linkedin}
-          className="cursor-pointer  hover:scale-[1.2]"
+          className="cursor-pointer hover:scale-[1.2]"
         />
         <Image
           isBlurred
           radius="sm"
-          width={32}
+          width={28}
           src={Instagram}
           className="cursor-pointer hover:scale-[1.2]"
         />
@@ -32,7 +35,7 @@ const SocialHandle = () => {
           src={yt}
           className="cursor-pointer hover:scale-[1.2]"
         />
-      </CardBody>
+      </div>
     </MyCard>
   );
 };

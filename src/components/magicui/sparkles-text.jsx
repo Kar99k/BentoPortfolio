@@ -51,7 +51,7 @@ const SparklesText = ({
   return (
     <div
       className={cn(
-        "text-xl font-bold flex justify-center md:text-2xl",
+        "text-xl flex font-semibold justify-center md:text-2xl",
         className
       )}
       {...props}
@@ -64,7 +64,7 @@ const SparklesText = ({
         {sparkles.map((sparkle) => (
           <Sparkle key={sparkle.id} {...sparkle} />
         ))}
-        <strong>{text}</strong>
+        <p>{text}</p>
       </span>
     </div>
   );

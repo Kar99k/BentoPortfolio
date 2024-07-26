@@ -21,10 +21,11 @@ import WorkCard from "./components/Molecules/WorkCard";
 import Services from "./components/Molecules/Services";
 import SocialHandle from "./components/Molecules/SocialHandle";
 import WorkExperience from "./components/Molecules/WorkExperience";
-import { Timeline } from "rsuite";
+import Timeline from "rsuite/Timeline";
 import TimelineItem from "./components/Molecules/TimelineItem";
 import content from "@/lib/constants";
 import InfoGraphics from "./components/Molecules/InfoGraphics";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [nav, setNav] = useState("Home");
@@ -35,12 +36,15 @@ function App() {
       <div className="absolute left-0 right-0 top-0 container mx-auto w-[390px] py-4 md:hidden">
         <div className=" flex flex-col justify-center items-center gap-6">
           <NavBar clicked={nav} setClicked={setNav} />
-          {nav === "Home" && <HomeMobile />}
-          {nav === "Works" && <WorksMobile />}
-          {nav === "Services" && <ServiceMobile />}
+          <Routes>
+            <Route path="/" element={<HomeMobile />} />
+            <Route path="/works" element={<WorksMobile />} />
+            <Route path="/services" element={<ServiceMobile />} />
+          </Routes>
         </div>
       </div>
 
+      {/* md screen */}
       <div className="w-[834px] p-6 flex flex-wrap gap-4 mx-auto max-md:hidden">
         <div className="flex flex-wrap w-[67%] h-[476px] gap-4 justify-between">
           <InfoGraphics />
@@ -49,7 +53,7 @@ function App() {
           </div>
           <div className=" w-[164px] h-[80px] rounded-2xl">
             <Button
-              className="w-full h-full text-xl font-bold bg-[#18181B] "
+              className="w-full h-full text-xl font-semibold bg-zinc-950 "
               startContent={<img src={Download} width={12} />}
             >
               Resume
@@ -61,7 +65,7 @@ function App() {
               backdrop={"blur"}
               isOpen={isOpen}
               onOpenChange={onOpenChange}
-              className="w-[360px] bg-zinc-950/90 md:w-[540px]"
+              className="w-[360px] bg-zinc-950/90 md:w-[800px]"
               hideCloseButton
             >
               <ModalContent>
