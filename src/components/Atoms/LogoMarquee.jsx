@@ -24,13 +24,13 @@ const LogoMarquee = () => {
 
       <div className="flex gap-1">
         <Marquee vertical="true" className="[--duration:15s]">
-          <Image isBlurred width={32} src={js} />
-          <Image isBlurred width={32} src={Html} />
-          <Image isBlurred width={32} src={Css} />
-          <Image isBlurred width={32} src={react} />
-          <Image isBlurred width={32} src={Next} />
-          <Image isBlurred width={32} src={Angular} />
-          <Image isBlurred width={32} src={electron} />
+          <Image isBlurred alt="javascript" width={32} src={js} />
+          <Image isBlurred alt="html" width={32} src={Html} />
+          <Image isBlurred alt="css" width={32} src={Css} />
+          <Image isBlurred alt="react" width={32} src={react} />
+          <Image isBlurred alt="next" width={32} src={Next} />
+          <Image isBlurred alt="angular" width={32} src={Angular} />
+          <Image isBlurred alt="electron" width={32} src={electron} />
         </Marquee>
 
         <Marquee
@@ -38,17 +38,24 @@ const LogoMarquee = () => {
           reverse="true"
           className="[--duration:15s] [--gap:0.8em]"
         >
-          <Image isBlurred width={32} src={Boot} />
-          <Image isBlurred width={32} src={Tail} />
-          <Image isBlurred width={32} src={jQuery} />
-          <Image isBlurred width={24} className="ml-1" src={Flutter} />
-          <Image isBlurred width={32} src={Graphql} />
-          <Image isBlurred width={32} src={Ae} />
-          <Image isBlurred width={32} src={Ps} />
-          <Image isBlurred width={32} src={Pr} />
+          <Image isBlurred alt="Boot" width={32} src={Boot} />
+          <Image isBlurred alt="Tail" width={32} src={Tail} />
+          <Image isBlurred alt="jquery" width={32} src={jQuery} />
+          <Image
+            isBlurred
+            alt="flutter"
+            width={24}
+            className="ml-1"
+            src={Flutter}
+          />
+          <Image isBlurred alt="graphql" width={32} src={Graphql} />
+          <Image isBlurred alt="ae" width={32} src={Ae} />
+          <Image isBlurred alt="ps" width={32} src={Ps} />
+          <Image isBlurred alt="pr" width={32} src={Pr} />
           <Image
             radius="none"
             isBlurred
+            alt="figma"
             width={16}
             src={Figma}
             className="ml-2"
