@@ -26,6 +26,7 @@ import TimelineItem from "./components/Molecules/TimelineItem";
 import content from "@/lib/constants";
 import InfoGraphics from "./components/Molecules/InfoGraphics";
 import { Route, Routes } from "react-router-dom";
+import climax from "@/assets/Pics/ClimaxFC.webp";
 
 function App() {
   const [nav, setNav] = useState("Home");
@@ -138,10 +139,7 @@ function App() {
         <div className="flex flex-row gap-4 w-[834px]">
           <div className="flex flex-col gap-4 h-[364px]">
             <div className=" w-[264px] h-[58%] rounded-2xl overflow-hidden">
-              <Image
-                src="https://media.giphy.com/media/mXpFZCVJeYTXW/giphy.gif"
-                className="rounded-2xl scale-[1.5]"
-              />
+              <Image src={climax} className="rounded-2xl scale-[1.5]" />
               <p className="text-sm font-semibold mt-16 text-center">
                 Made with 💚 by Karthikeyan
               </p>

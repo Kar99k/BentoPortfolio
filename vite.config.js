@@ -5,7 +5,7 @@ import compression from "vite-plugin-compression";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  server: { host: true, sourcemap: true },
+  server: { host: true },
   plugins: [
     react(),
     tsconfigPaths(),
@@ -17,7 +17,4 @@ export default defineConfig({
       minRatio: 0.8, // Only compress files that achieve a compression ratio of at least 0.8
     }),
   ],
-  build: {
-    sourcemap: true, // Enable sourcemaps for build
-  },
 });

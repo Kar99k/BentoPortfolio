@@ -23,7 +23,7 @@ const LogoMarqueeFull = () => {
       <div className="w-28 h-[196px] bg-custom-gradient absolute z-20 "></div>
 
       <div className="flex gap-1">
-        <Marquee vertical="true" className="[--duration:15s]">
+        <Marquee vertical="true" className="[--duration:10s]">
           <Image isBlurred alt="javascript" width={32} src={js} />
           <Image isBlurred alt="html" width={32} src={Html} />
           <Image isBlurred alt="css" width={32} src={Css} />
@@ -36,7 +36,7 @@ const LogoMarqueeFull = () => {
         <Marquee
           vertical="true"
           reverse="true"
-          className="[--duration:15s] [--gap:0.8em]"
+          className="[--duration:10s] [--gap:0.8em]"
         >
           <Image isBlurred alt="Boot" width={32} src={Boot} />
           <Image isBlurred alt="Tail" width={32} src={Tail} />

@@ -1,4 +1,5 @@
 import { Card, Image, CardFooter, Divider } from "@nextui-org/react";
+import herocard from "@/assets/Pics/herocard.webp";
 
 const WorkItem = ({ name = "Project Name", desc = "description" }) => {
   return (
@@ -7,7 +8,7 @@ const WorkItem = ({ name = "Project Name", desc = "description" }) => {
         isBlurred
         alt="Woman listing to music"
         className="object-cover"
-        src="https://nextui.org/images/hero-card.jpeg"
+        src={herocard}
       />
 
       <CardFooter className="flex flex-col before:bg-white/10 border-white/20 overflow-hidden py-1 absolute bottom-0 shadow-xl z-10">

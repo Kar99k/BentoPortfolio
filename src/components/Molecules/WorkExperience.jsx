@@ -1,4 +1,5 @@
 import { Button } from "@nextui-org/react";
+import welcome from "@/assets/Pics/WelcomeFC.webp";
 
 const WorkExperience = ({ onOpen }) => {
   return (
@@ -11,7 +12,8 @@ const WorkExperience = ({ onOpen }) => {
         Work Experience
       </span>
       <img
-        src="https://media.giphy.com/media/10ulkX3Y06BRmw/giphy.gif"
+        src={welcome}
+        alt="A Scene from Fight Club"
         className="w-[100%] h-full object-cover brightness-100 hover:brightness-50 "
       />
     </Button>

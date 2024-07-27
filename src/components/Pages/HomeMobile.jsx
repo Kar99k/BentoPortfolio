@@ -20,6 +20,7 @@ import TimelineItem from "../Molecules/TimelineItem";
 import { Timeline } from "rsuite";
 import WorkExperience from "../Molecules/WorkExperience";
 import content from "@/lib/constants";
+import climax from "@/assets/Pics/ClimaxFC.webp";
 
 const HomeMobile = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -108,11 +109,7 @@ const HomeMobile = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-3 mt-1 ">
-        <Image
-          isBlurred
-          src="https://media.giphy.com/media/mXpFZCVJeYTXW/giphy.gif"
-          className="rounded-2xl scale-[1.08]"
-        />
+        <Image isBlurred src={climax} alt="Climax from Fight Club" className="rounded-2xl scale-[1.08]" />
         <p className="text-xsm font-semibold">Made with 💚 by Karthikeyan</p>
       </div>
     </div>
