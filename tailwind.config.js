@@ -1,5 +1,4 @@
 const { nextui } = require("@nextui-org/react");
-const { lime, red } = require("@radix-ui/colors");
 const svgToDataUri = require("mini-svg-data-uri");
 
 const colors = require("tailwindcss/colors");
@@ -17,9 +16,6 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        lime9: "#99D52A",
-      },
       backgroundImage: (theme) => ({
         "custom-gradient":
           "linear-gradient(180deg, rgba(9,9,0,1) 0%, rgba(9,9,0,0) 10%, rgba(9,9,0,0) 50%, rgba(9,9,0,0) 90%, rgba(9,9,0,1) 100%)",
