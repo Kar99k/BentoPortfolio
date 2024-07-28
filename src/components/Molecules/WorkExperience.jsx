@@ -1,5 +1,5 @@
 import { Button } from "@nextui-org/react";
-import welcome from "@/assets/Pics/WelcomeFC.webp";
+import welcome from "@/assets/Pics/WelcomeFCx1.webp";
 
 const WorkExperience = ({ onOpen }) => {
   return (

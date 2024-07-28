@@ -26,7 +26,7 @@ import TimelineItem from "./components/Molecules/TimelineItem";
 import content from "@/lib/constants";
 import InfoGraphics from "./components/Molecules/InfoGraphics";
 import { Route, Routes } from "react-router-dom";
-import climax from "@/assets/Pics/ClimaxFC.webp";
+import climax from "@/assets/Pics/ClimaxFCx1.webp";
 
 function App() {
   const [nav, setNav] = useState("Home");
@@ -34,6 +34,7 @@ function App() {
 
   return (
     <div>
+      {/* sm screen */}
       <div className="absolute left-0 right-0 top-0 container mx-auto w-[390px] py-4 md:hidden">
         <div className=" flex flex-col justify-center items-center gap-6">
           <NavBar clicked={nav} setClicked={setNav} />

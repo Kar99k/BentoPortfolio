@@ -4,7 +4,7 @@ import react from "@/assets/logos/React.svg";
 import js from "@/assets/logos/JS.svg";
 import Css from "@/assets/logos/Css.svg";
 import Html from "@/assets/logos/Html.svg";
-import electron from "@/assets/logos/Electron.png";
+import electron from "@/assets/logos/Electron.webp";
 import Angular from "@/assets/logos/Angular.svg";
 import Ae from "@/assets/logos/Ae.svg";
 import Ps from "@/assets/logos/Ps.svg";
