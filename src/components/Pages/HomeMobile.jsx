@@ -20,7 +20,7 @@ import TimelineItem from "../Molecules/TimelineItem";
 import { Timeline } from "rsuite";
 import WorkExperience from "../Molecules/WorkExperience";
 import content from "@/lib/constants";
-import climax from "@/assets/Pics/ClimaxFC.webp";
+import climax from "@/assets/Pics/ClimaxFCx1.webp";
 
 const HomeMobile = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
