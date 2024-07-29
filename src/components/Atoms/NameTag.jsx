@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react";
 import WordRotate from "../magicui/word-rotate";
 
 const NameTag = () => {
