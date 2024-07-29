@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react";
 import WordRotate from "../magicui/word-rotate";
 
 const NameTag = () => {
@@ -6,16 +5,10 @@ const NameTag = () => {
     <div className="flex flex-col">
       <div className="text-2xl font-bold flex gap-1 items-center md:text-[46px] md:-mt-3 sm:-mt-1">
         Karthikeyan
-        <Icon
-          icon="material-symbols:verified"
-          color="#99D52A"
-          width="1em"
-          height="1em"
-        />
       </div>
 
       <div className="-mt-3 flex gap-1 items-center md:-mt-4">
-        <div className="text-lime9 text-sm font-medium md:text-xl">
+        <div className="text-[#99D52A] text-sm font-medium md:text-xl">
           I&lsquo;m{" "}
         </div>
         <WordRotate
