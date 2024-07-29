@@ -24,6 +24,7 @@ export default {
       }),
       fontFamily: {
         maison: ["Maison Neue Extended", "sans-serif"],
+        garamond: ["Apple Garamond","serif"],
       },
       screens: {
         sm: "360px",

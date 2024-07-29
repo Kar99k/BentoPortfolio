@@ -6,6 +6,8 @@ import NavBar from "./components/Molecules/NavBar";
 import NameCard from "./components/Organisms/NameCard";
 import {
   Button,
+  CardBody,
+  CardFooter,
   Divider,
   Image,
   Modal,
@@ -26,7 +28,8 @@ import TimelineItem from "./components/Molecules/TimelineItem";
 import content from "@/lib/constants";
 import InfoGraphics from "./components/Molecules/InfoGraphics";
 import { Route, Routes } from "react-router-dom";
-import climax from "@/assets/Pics/ClimaxFCx1.webp";
+import { MyCard } from "./components/Atoms/MyCard";
+import Quote from "./components/Molecules/Quote";
 
 function App() {
   const [nav, setNav] = useState("Home");
@@ -55,7 +58,7 @@ function App() {
           </div>
           <div className=" w-[164px] h-[80px] rounded-2xl">
             <Button
-              className="w-full h-full text-xl font-semibold bg-zinc-950 "
+              className="w-full h-full text-xl font-semibold bg-[#141513] "
               startContent={<img src={Download} width={12} />}
             >
               Resume
@@ -137,14 +140,9 @@ function App() {
           </div>
         </div>
 
-        <div className="flex flex-row gap-4 w-[834px]">
-          <div className="flex flex-col gap-4 h-[364px]">
-            <div className=" w-[264px] h-[58%] rounded-2xl overflow-hidden">
-              <Image src={climax} className="rounded-2xl scale-[1.5]" />
-              <p className="text-sm font-semibold mt-16 text-center">
-                Made with 💚 by Karthikeyan
-              </p>
-            </div>
+        <div className="flex flex-row gap-4 w-[834px] h-fit">
+          <div className="flex flex-col gap-4 h-[334px]">
+            <Quote />
             <div className=" w-[264px] h-[25%] rounded-2xl">
               <SocialHandle />
             </div>
