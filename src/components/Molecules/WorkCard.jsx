@@ -14,6 +14,7 @@ const WorkCard = () => {
       <CardBody className="overflow-hidden w-[140px] md:w-[460px] md:justify-center">
         <Marquee pauseOnHover="true" className="[--duration:5s] rounded-xl">
           <WorkItem />
+          <WorkItem />
         </Marquee>
       </CardBody>
     </MyCard>
