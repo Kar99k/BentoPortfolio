@@ -6,10 +6,7 @@ import NavBar from "./components/Molecules/NavBar";
 import NameCard from "./components/Organisms/NameCard";
 import {
   Button,
-  CardBody,
-  CardFooter,
   Divider,
-  Image,
   Modal,
   ModalBody,
   ModalContent,
@@ -28,7 +25,6 @@ import TimelineItem from "./components/Molecules/TimelineItem";
 import content from "@/lib/constants";
 import InfoGraphics from "./components/Molecules/InfoGraphics";
 import { Route, Routes } from "react-router-dom";
-import { MyCard } from "./components/Atoms/MyCard";
 import Quote from "./components/Molecules/Quote";
 
 function App() {
@@ -142,7 +138,9 @@ function App() {
 
         <div className="flex flex-row gap-4 w-[834px] h-fit">
           <div className="flex flex-col gap-4 h-[334px]">
-            <Quote />
+            <div className="w-[264px] h-[64%] rounded-2xl gap-2 overflow-hidden items-center">
+              <Quote />
+            </div>
             <div className=" w-[264px] h-[25%] rounded-2xl">
               <SocialHandle />
             </div>
