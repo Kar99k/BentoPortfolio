@@ -4,7 +4,7 @@ import climax from "@/assets/Pics/ClimaxFCx1.webp";
 
 const Quote = () => {
   return (
-    <MyCard className="gap-2 items-center md:w-full sm:w-[390px]" color="zinc">
+    <MyCard className="gap-2 items-center md:w-full sm:w-[390px] md:h-full" color="zinc">
       <CardBody className="flex text-wrap text-center font-garamond text-[20px] gap-4 leading-tight sm:text-base">
         <Image src={climax} sizes={84} />
         <p>
