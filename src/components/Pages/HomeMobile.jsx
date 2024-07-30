@@ -3,7 +3,6 @@ import NameCard from "../Organisms/NameCard";
 import {
   Button,
   Divider,
-  Image,
   Modal,
   ModalBody,
   ModalContent,
@@ -20,7 +19,6 @@ import TimelineItem from "../Molecules/TimelineItem";
 import { Timeline } from "rsuite";
 import WorkExperience from "../Molecules/WorkExperience";
 import content from "@/lib/constants";
-import climax from "@/assets/Pics/ClimaxFCx1.webp";
 import Quote from "../Molecules/Quote";
 
 const HomeMobile = () => {
@@ -97,7 +95,7 @@ const HomeMobile = () => {
       <div className="flex flex-row gap-4 scale-[1.15] mt-2">
         <div className="flex flex-col gap-4">
           <Button
-            className="w-[172px] h-[80px] text-xl bg-[#141513] font-semibold"
+            className="w-[172px] h-[80px] text-xl bg-zinc-950 font-semibold transition ease-in-out ring-[1px] ring-zinc-900 hover:ring-zinc-700 hover:transition-all"
             startContent={<img src={Download} width={12} />}
           >
             Resume
@@ -110,13 +108,7 @@ const HomeMobile = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-3 mt-1 ">
-        {/* <Image
-          isBlurred
-          src={climax}
-          alt="Climax from Fight Club"
-          className="rounded-2xl scale-[1.08]"
-        /> */}
-        <Quote/>
+        <Quote />
       </div>
     </div>
   );
