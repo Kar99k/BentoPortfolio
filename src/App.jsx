@@ -54,7 +54,7 @@ function App() {
           </div>
           <div className=" w-[164px] h-[80px] rounded-2xl">
             <Button
-              className="w-full h-full text-xl font-semibold bg-[#141513] "
+              className="w-full h-full text-xl font-semibold bg-zinc-950 transition ease-in-out ring-[1px] ring-zinc-900 hover:ring-zinc-700 hover:transition-all"
               startContent={<img src={Download} width={12} />}
             >
               Resume
@@ -138,7 +138,7 @@ function App() {
 
         <div className="flex flex-row gap-4 w-[834px] h-fit">
           <div className="flex flex-col gap-4 h-[334px]">
-            <div className="w-[264px] h-[64%] rounded-2xl gap-2 overflow-hidden items-center">
+            <div className="w-[264px] h-[64%] rounded-2xl gap-2 items-center">
               <Quote />
             </div>
             <div className=" w-[264px] h-[25%] rounded-2xl">
