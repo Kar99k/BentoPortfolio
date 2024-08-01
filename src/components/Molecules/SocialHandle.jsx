@@ -16,18 +16,39 @@ const SocialHandle = () => {
           radius="sm"
           src={Linkedin}
           className="cursor-pointer size-7 md:size-10"
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/karthikeyan-venkateswaran/",
+              "_blank",
+              "noopener noreferrer"
+            )
+          }
         />
         <Image
           isBlurred
           radius="sm"
           src={Instagram}
           className="cursor-pointer size-7 md:size-10"
+          onClick={() =>
+            window.open(
+              "https://www.instagram.com/this.karthi/",
+              "_blank",
+              "noopener noreferrer"
+            )
+          }
         />
         <Image
           isBlurred
           radius="sm"
           src={yt}
           className="cursor-pointer  size-9 md:size-14"
+          onClick={() =>
+            window.open(
+              "http://www.youtube.com/@leekatron",
+              "_blank",
+              "noopener noreferrer"
+            )
+          }
         />
       </CardBody>
     </MyCard>
