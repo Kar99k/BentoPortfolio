@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import { MyButton } from "../Atoms/MyButton";
 
-const CTA = () => {
+const Cta = () => {
   return (
     <div className="flex gap-4 sm:-mt-2 md:mt-0">
       <MyButton
@@ -40,4 +40,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default Cta;
