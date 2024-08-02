@@ -11,7 +11,6 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import TechStack from "../Molecules/TechStack";
-import WorkCard from "../Molecules/WorkCard";
 import SocialHandle from "../Molecules/SocialHandle";
 import Download from "@/assets/logos/Download.svg";
 import "rsuite/Timeline/styles/index.css";
@@ -100,7 +99,6 @@ const HomeMobile = () => {
           >
             Resume
           </Button>
-          <WorkCard />
         </div>
         <div className="flex flex-col gap-4">
           <TechStack />
