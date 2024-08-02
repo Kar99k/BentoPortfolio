@@ -1,6 +1,6 @@
 import NameTag from "../Atoms/NameTag";
 import ProPic from "../Atoms/ProPic";
-import CTA from "../Molecules/Cta";
+import CTA from "../Molecules/CTA";
 import MyChip from "../Atoms/MyChip";
 import Marquee from "../magicui/marquee";
 import { MyCard } from "../Atoms/MyCard";
