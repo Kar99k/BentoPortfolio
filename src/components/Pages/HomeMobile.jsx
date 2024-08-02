@@ -11,7 +11,6 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import TechStack from "../Molecules/TechStack";
-import WorkCard from "../Molecules/WorkCard";
 import SocialHandle from "../Molecules/SocialHandle";
 import Download from "@/assets/logos/Download.svg";
 import "rsuite/Timeline/styles/index.css";
@@ -97,10 +96,14 @@ const HomeMobile = () => {
           <Button
             className="w-[172px] h-[80px] text-xl bg-zinc-950 font-semibold transition ease-in-out ring-[1px] ring-zinc-900 hover:ring-zinc-700 hover:transition-all"
             startContent={<img src={Download} width={12} />}
+            onClick={() => {
+              window.open(
+                "https://docs.google.com/document/d/1saPsB7Lnnpk_S98K3g7P94RCN6uOTlMt7ph25-QDYpI/export?format=pdf"
+              );
+            }}
           >
             Resume
           </Button>
-          <WorkCard />
         </div>
         <div className="flex flex-col gap-4">
           <TechStack />

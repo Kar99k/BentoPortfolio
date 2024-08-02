@@ -56,6 +56,11 @@ function App() {
             <Button
               className="w-full h-full text-xl font-semibold bg-zinc-950 transition ease-in-out ring-[1px] ring-zinc-900 hover:ring-zinc-700 hover:transition-all"
               startContent={<img src={Download} width={12} />}
+              onClick={() => {
+                window.open(
+                  "https://docs.google.com/document/d/1saPsB7Lnnpk_S98K3g7P94RCN6uOTlMt7ph25-QDYpI/export?format=pdf"
+                );
+              }}
             >
               Resume
             </Button>
