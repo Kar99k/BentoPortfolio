@@ -8,7 +8,6 @@ import {
   ModalHeader,
   useDisclosure,
 } from "@nextui-org/react";
-import Download from "@/assets/logos/Download.svg";
 import TechStack from "../Molecules/TechStack";
 import WorkCard from "../Molecules/WorkCard";
 import Services from "../Molecules/Services";
@@ -20,6 +19,7 @@ import content from "@/lib/constants";
 import InfoGraphics from "../Molecules/InfoGraphics";
 import Quote from "../Molecules/Quote";
 import NameCard from "../Organisms/NameCard";
+import { Icon } from "@iconify/react";
 
 const LandingPageMd = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -34,7 +34,9 @@ const LandingPageMd = () => {
         <div className=" w-[164px] h-[80px] rounded-2xl">
           <Button
             className="w-full h-full text-xl font-semibold bg-zinc-950 transition ease-in-out ring-[1px] ring-zinc-900 hover:ring-zinc-700 hover:transition-all"
-            startContent={<img src={Download} width={12} />}
+            startContent={
+              <Icon icon="mage:file-download" style={{ color: "#99d52a" }} />
+            }
             onClick={() => {
               window.open(
                 "https://docs.google.com/document/d/1saPsB7Lnnpk_S98K3g7P94RCN6uOTlMt7ph25-QDYpI/export?format=pdf"

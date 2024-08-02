@@ -1,21 +1,5 @@
-import { Image } from "@nextui-org/react";
 import Marquee from "../magicui/marquee";
-import react from "@/assets/logos/React.svg";
-import js from "@/assets/logos/JS.svg";
-import Css from "@/assets/logos/Css.svg";
-import Html from "@/assets/logos/Html.svg";
-import electron from "@/assets/logos/Electron.webp";
-import Angular from "@/assets/logos/Angular.svg";
-import Ae from "@/assets/logos/Ae.svg";
-import Ps from "@/assets/logos/Ps.svg";
-import Pr from "@/assets/logos/Pr.svg";
-import Figma from "@/assets/logos/Figma.svg";
-import Next from "@/assets/logos/Next.svg";
-import Boot from "@/assets/logos/Boot.svg";
-import Tail from "@/assets/logos/Tail.svg";
-import jQuery from "@/assets/logos/jQuery.svg";
-import Flutter from "@/assets/logos/Flutter.svg";
-import Graphql from "@/assets/logos/Graphql.svg";
+import { Icon } from "@iconify/react";
 
 const LogoMarqueeFull = () => {
   return (
@@ -24,13 +8,17 @@ const LogoMarqueeFull = () => {
 
       <div className="flex gap-1">
         <Marquee vertical="true" className="[--duration:10s]">
-          <Image isBlurred alt="javascript" width={32} src={js} />
-          <Image isBlurred alt="html" width={32} src={Html} />
-          <Image isBlurred alt="css" width={32} src={Css} />
-          <Image isBlurred alt="react" width={32} src={react} />
-          <Image isBlurred alt="next" width={32} src={Next} />
-          <Image isBlurred alt="angular" width={32} src={Angular} />
-          <Image isBlurred alt="electron" width={32} src={electron} />
+          <Icon
+            icon="fa6-brands:square-js"
+            width={32}
+            style={{ color: "#eeff00" }}
+          />
+          <Icon icon="vscode-icons:file-type-html" width={32} />
+          <Icon icon="devicon:css3" width={32} />
+          <Icon icon="logos:react" width={32} />
+          <Icon icon="logos:nextjs-icon" width={32} />
+          <Icon icon="vscode-icons:file-type-angular" width={32} />
+          <Icon icon="logos:electron" width={32} />
         </Marquee>
 
         <Marquee
@@ -38,31 +26,26 @@ const LogoMarqueeFull = () => {
           reverse="true"
           className="[--duration:10s] [--gap:0.8em]"
         >
-          <Image isBlurred alt="Boot" width={32} src={Boot} />
-          <Image isBlurred alt="Tail" width={32} src={Tail} />
-          <Image isBlurred alt="jquery" width={32} src={jQuery} />
-          <Image
-            isBlurred
-            alt="flutter"
-            width={24}
-            className="ml-1"
-            src={Flutter}
+          <Icon icon="logos:bootstrap" width={32} />
+          <Icon icon="logos:tailwindcss-icon" width={32} />
+          <Icon
+            icon="devicon-plain:jquery-wordmark"
+            style={{ color: "#eeff00" }}
+            width={32}
           />
-          <Image isBlurred alt="graphql" width={32} src={Graphql} />
+          <Icon icon="logos:flutter" width={32} />
+          <Icon icon="logos:graphql" width={32} />
         </Marquee>
 
         <Marquee vertical="true" className="[--duration:10s] [--gap:0.8em]">
-          <Image isBlurred alt="ae" width={32} src={Ae} />
-          <Image isBlurred alt="ps" width={32} src={Ps} />
-          <Image isBlurred alt="pr" width={32} src={Pr} />
-          <Image
-            radius="none"
-            isBlurred
-            alt="figma"
-            width={16}
-            src={Figma}
-            className="ml-2"
+          <Icon icon="logos:adobe-after-effects" width={32} />
+          <Icon
+            icon="simple-icons:adobepremierepro"
+            style={{ color: "#8800d1" }}
+            width={32}
           />
+          
+          <Icon icon="logos:figma" width={32} />
         </Marquee>
       </div>
     </div>

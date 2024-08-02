@@ -12,13 +12,13 @@ import {
 } from "@nextui-org/react";
 import TechStack from "../Molecules/TechStack";
 import SocialHandle from "../Molecules/SocialHandle";
-import Download from "@/assets/logos/Download.svg";
 import "rsuite/Timeline/styles/index.css";
 import TimelineItem from "../Molecules/TimelineItem";
 import { Timeline } from "rsuite";
 import WorkExperience from "../Molecules/WorkExperience";
 import content from "@/lib/constants";
 import Quote from "../Molecules/Quote";
+import { Icon } from "@iconify/react";
 
 const HomeMobile = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -95,7 +95,9 @@ const HomeMobile = () => {
         <div className="flex flex-col gap-4">
           <Button
             className="w-[172px] h-[80px] text-xl bg-zinc-950 font-semibold transition ease-in-out ring-[1px] ring-zinc-900 hover:ring-zinc-700 hover:transition-all"
-            startContent={<img src={Download} width={12} />}
+            startContent={
+              <Icon icon="mage:file-download" style={{ color: "#99d52a" }} />
+            }
             onClick={() => {
               window.open(
                 "https://docs.google.com/document/d/1saPsB7Lnnpk_S98K3g7P94RCN6uOTlMt7ph25-QDYpI/export?format=pdf"
