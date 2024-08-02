@@ -1,5 +1,5 @@
 ### Todo Items
-- [ ] Loading for homescreen
+- [x] Loading for homescreen
 - [ ] Image loading for all images
 - [ ] Design and update for service
 - [ ] Update content for Works ( Both in mobile and desktop )
@@ -7,8 +7,7 @@
 - [ ] On click of work , Modal can be opened
 - [ ] Update Work Experience
 - [ ] Convert icons to iconify.react
-- [ ] Codesplitting for mobile and desktop view
+- [x] Codesplitting for mobile and desktop view
 - [ ] Remove unused or not required magicUI component
 - [ ] Add background or something
 - [ ] Add Cursor color shadow
-- [ ] 
