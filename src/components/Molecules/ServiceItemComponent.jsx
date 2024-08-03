@@ -11,7 +11,7 @@ const ServiceItemComponent = ({
         <h1 className="font-bold text-2xl">{header}</h1>
         <p className="text-sm text-zinc-400">{description}</p>
         <MyButton color="monoButtonGreen" className="font-bold">
-          Check Rates
+          Let's connect
         </MyButton>
       </div>
     </MyCard>
