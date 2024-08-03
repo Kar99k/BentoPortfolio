@@ -11,3 +11,4 @@
 - [ ] Remove unused or not required magicUI component
 - [ ] Add background or something
 - [ ] Add Cursor color shadow
+- [ ] Add pointer info
